@@ -1,14 +1,7 @@
-x = 0
-y = 1
-
-fib = 0
-
-
-for i in range(1,4000000):
-    f = x + y
-    x = y
-    y = f
-    if f % 2 == 0 :
-        fib += f
-
-print(f)
+sum = 0
+f1, f2 = 0, 1
+while f2 < 4000000:
+    if f2 % 2 == 0:
+        sum += f2
+    f1, f2 = f2, f1 + f2
+print(sum)
